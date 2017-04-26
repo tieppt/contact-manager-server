@@ -1,0 +1,26 @@
+{
+  "name": "contact-manager-server",
+  "version": "1.0.0",
+  "description": "This is API server for demo HTTP request in Angular",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "serve": "nodemon main.js"
+  },
+  "keywords": [
+    "Node API",
+    "MEAN"
+  ],
+  "author": "Tiep Phan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
