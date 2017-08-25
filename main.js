@@ -14,7 +14,9 @@ const DB_PASS = process.env.DB_PASS;
 const DB_URL = `mongodb://${DB_USER}:${DB_PASS}@${DB_HOST}`;
 
 mongoose.Promise = global.Promise;
-mongoose.connect(DB_URL);
+mongoose.connect(DB_URL, {
+  useMongoClient: true
+});
 
 let app = express();
 

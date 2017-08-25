@@ -54,7 +54,6 @@ function editContact(req, res) {
 function deleteContact(req, res) {
   Contact.findByIdAndRemove(req.params.id)
     .then((data) => {
-      console.log(data);
       if (!data) {
         return res.status(404).json({
           errorCode: '404',
